@@ -117,6 +117,11 @@ void keyboard(unsigned char key, int x, int y) {
 
 	if (key == 32) { addQuad(); } //spacebar
 
+	if (key == 'r') { Q[cn].r = 1; Q[cn].g = 0; Q[cn].b = 0; }
+	if (key == 'g') { Q[cn].r = 0; Q[cn].g = 1; Q[cn].b = 0; }
+	if (key == 'b') { Q[cn].r = 0; Q[cn].g = 0; Q[cn].b = 1; }
+	if (key == 'y') { Q[cn].r = 1; Q[cn].g = 1; Q[cn].b = 0; }
+
 	glutPostRedisplay();
 }
 
